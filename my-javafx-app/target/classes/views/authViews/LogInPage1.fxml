@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.controllers.authControllers.LogInPage1Controller">
+   <children>
+      <GridPane layoutX="201.0" layoutY="60.0" prefHeight="97.0" prefWidth="376.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password" GridPane.rowIndex="2" />
+            <TextField fx:id="userNameFeild" promptText="Enter Your Name" GridPane.columnIndex="1" />
+            <Label fx:id="userNameErrorFeild" prefHeight="13.0" prefWidth="151.0" textFill="#d70909" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <TextField fx:id="passwordFeild" prefHeight="19.0" prefWidth="152.0" promptText="Enter New Password" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="passwordErrorFeild" prefHeight="17.0" prefWidth="186.0" textFill="#ed1607" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Text fill="#1441c9" layoutX="304.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In" wrappingWidth="242.94384713470936">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="signUpBtn" defaultButton="true" layoutX="249.0" layoutY="179.0" mnemonicParsing="false" onAction="#SignInFunction" text="Sign In Here" textFill="#0a0a0a">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Hyperlink fx:id="signUpInstead" layoutX="358.0" layoutY="180.0" onAction="#SignUpInsteadFunction" text=" or  Sign Up Instead" />
+      <ProgressIndicator fx:id="loadingIndicator" layoutX="569.0" layoutY="486.0" prefHeight="36.0" prefWidth="30.0" progress="0.0" visible="false" />
+   </children>
+</AnchorPane>

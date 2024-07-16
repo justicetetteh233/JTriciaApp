@@ -1,0 +1,8 @@
+com/mycompany/app/App.class
+com/mycompany/appBackend/databases/DatabaseConnection.class
+com/mycompany/app/controllers/authControllers/SignUpPage0Controller.class
+com/mycompany/appBackend/models/User.class
+com/mycompany/app/controllers/aControllerTraits/Validator.class
+com/mycompany/appBackend/models/BaseModelInterface.class
+com/mycompany/appBackend/auth/AuthManager.class
+com/mycompany/app/controllers/aControllerTraits/UserNotifierOfFailure.class
