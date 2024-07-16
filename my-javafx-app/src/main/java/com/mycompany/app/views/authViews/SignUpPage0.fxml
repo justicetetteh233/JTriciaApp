@@ -5,6 +5,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressIndicator?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -12,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.controllers.authControllers.SignUpPage0Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.controllers.authControllers.SignUpPage0Controller">
    <children>
       <GridPane layoutX="265.0" layoutY="29.0" prefHeight="274.0" prefWidth="321.0">
         <columnConstraints>
@@ -118,5 +120,10 @@
             <Font size="14.0" />
          </font>
       </Hyperlink>
+      <ImageView fitHeight="253.0" fitWidth="617.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/Premium%20Vector%20_%20Student%20discussion%20illustration%20colorful%20flat%20design.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
