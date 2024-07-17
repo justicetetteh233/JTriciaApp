@@ -113,7 +113,7 @@ public class SignUpPage0Controller {
                 Boolean isCreatedSuccessfully = newUser.create();
 
                 if(isCreatedSuccessfully){
-                    Navigator.navigate("/views/authViews/LogInPage1.fxml", event);
+                    Navigator.navigate("/views/schoolPages/CreateSchoolPage3.fxml", event);
                 }else{
                     System.out.println("now coming to load error animation");
                     if(UserNotifierOfFailure.notified(loadingIndicator))
